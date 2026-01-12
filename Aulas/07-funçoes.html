@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Funções</title>
+    </head>
+
+    <body>
+        <script>
+            // function funcao1(){
+            //     console.log('Hello');
+            //     console.log(2+2);
+            // }
+
+            // funcao1();
+            // funcao1();
+
+            // parametro = coloca um valor dentro de uma funçao, funciona do mesmo jeito que uma variavel, ele so existe dentro dessa funçao
+            // parametro = 0.1 | valor já definido para caso ele nao seja definido depois e quebre o codigo
+            function calcularTaxa(custo, porcentagemTaxa = 0.1){
+                console.log(custo * porcentagemTaxa);
+            }
+            calcularTaxa(2000, 0.2);
+            calcularTaxa(5000);
+        </script>
+    </body>
+</html>

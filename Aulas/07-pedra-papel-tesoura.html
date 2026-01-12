@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pedra Papel Tesoura</title>
+    </head>
+
+    <body>
+        <p>Pedra Papel Tesoura</p>
+        
+        <button onclick="
+        jogar('pedra');
+        ">Pedra</button>
+
+
+        <button onclick="
+        jogar('papel');
+        ">Papel</button>
+
+        <button onclick="
+        jogar('tesoura');
+        ">Tesoura</button>
+
+        <script>
+            function jogar(movimentoJogador){
+                const movimentoPC = escolhaPc();
+                
+                resultado = '';
+
+                if(movimentoJogador === 'tesoura'){
+                    if(movimentoPC === 'tesoura'){
+                        resultado = 'Empate';
+                    }
+                    else if(movimentoPC === 'pedra'){
+                        resultado = 'Você perdeu';
+                    }
+                    else if(movimentoPC === 'papel'){
+                        resultado = 'Você ganhou';
+                    }
+                }
+
+                else if(movimentoJogador === 'papel'){   
+                    if(movimentoPC === 'papel'){
+                        resultado = 'Empate';
+                    }
+                    else if(movimentoPC === 'tesoura'){
+                        resultado = 'Você perdeu';
+                    }
+                    else if(movimentoPC === 'pedra'){
+                        resultado = 'Você ganhou';
+                    }
+                }
+                
+                else if(movimentoJogador === 'pedra'){
+                    if(movimentoPC === 'pedra'){
+                        resultado = 'Empate';
+                    }
+                    else if(movimentoPC === 'papel'){
+                        resultado = 'Você perdeu';
+                    }
+                    else if(movimentoPC === 'tesoura'){
+                        resultado = 'Você ganhou';
+                    }
+                }
+                alert(`Você escolheu ${movimentoJogador}. Computador escolheu ${movimentoPC}. ${resultado}`)  
+            }
+
+            function escolhaPc(){
+                const numeroAleatorio = Math.random();
+
+                let movimentoPC = '';
+
+                if(numeroAleatorio >= 0 && numeroAleatorio < 1/3){
+                    movimentoPC = 'pedra';
+                }
+                else if(numeroAleatorio >= 1/3 && numeroAleatorio < 2/3){
+                    movimentoPC = 'papel';
+                }
+                else if(numeroAleatorio >= 2/3 && numeroAleatorio < 1){
+                    movimentoPC = 'tesoura';
+                }
+                return movimentoPC; //isso retorna pro começo, pra que o resto do codigo seja rodado
+            }
+        </script>
+    </body>
+</html>

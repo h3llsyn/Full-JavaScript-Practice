@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>07</title>
+    </head>
+
+    <body>
+        <script>
+            function greet(nome){
+                if(!nome){
+                    console.log('oioii');
+                }
+                else{
+                    console.log(`oioii ${nome}`);
+                }
+            }
+
+            function converterParaFahrenheit(celsius){
+                return (celsius * 9 / 5) + 32;
+            }
+
+            function converterParaCelsius(fahrenheit){
+                return (fahrenheit - 32) * 5 / 9;
+            }
+
+            function converterTemperatura(graus, unid){
+                if(unid === 'C'){
+                    const resultado = converterParaFahrenheit(graus);
+                    return `${resultado}F`;
+                }
+                else if(unid === 'F'){
+                    const resultado = converterParaCelsius(graus);
+                    return `${resultado}C`;
+                }
+            }
+
+            // console.log(converterTemperatura(25, 'C'));
+            // console.log(converterTemperatura(86, 'F'));
+
+            function converterLength(length, from, to){
+                
+            }
+        </script>
+    </body>
+</html>
