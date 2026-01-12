@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cara ou Coroa</title>
+    </head>
+
+    <body>
+        <script>
+            let numeroAleatorio = Math.random();
+            let resultado = ''
+
+            // if(numeroAleatorio <= 0.5){
+            //     resultado = 'cara';
+            // }
+            // else{
+            //     resultado = 'coroa';
+            // }
+            // console.log(resultado);
+
+            let adivinhar = 'cara';
+            // if(adivinhar === resultado){
+            //     console.log('Você ganhou');
+            // }
+            // else{
+            //     console.log('Você perdeu');
+            // }
+
+            resultado = numeroAleatorio <= 0.5 ? 'cara' : 'coroa';
+            console.log(resultado);
+
+            resultado = adivinhar === resultado ? 'você ganhou' : 'você perdeu';
+            console.log(resultado);
+
+        </script>
+    </body>
+</html>

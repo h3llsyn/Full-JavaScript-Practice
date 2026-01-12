@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>06</title>
+    </head>
+
+    <body>
+        <script>
+            let hora = 8;
+            let nome = 'Lavíz';
+            if(hora >= 6 && hora <= 12){
+                console.log(`Bodia ${nome}`);
+            }
+            else if(hora >= 13 && hora <= 17){
+                console.log(`Batarde ${nome}`);
+            }
+            else{
+                console.log(`Banoite ${nome}`);
+            }
+
+            let idade = 52;
+            const ehFeriado = true;
+            if((idade <= 6 || idade >= 65) && ehFeriado){
+                console.log('Desconto');
+            }
+            else{
+                console.log('Sem desconto');
+            }
+        </script>
+    </body>
+</html>

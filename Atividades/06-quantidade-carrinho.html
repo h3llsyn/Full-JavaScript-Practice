@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quantidade do Carrinho</title>
+    </head>
+
+    <body>
+        <p>Quantidade do Carrinho</p>
+        <button onclick="
+        console.log(`Quantidade do carrinho: ${quantidadeCarrinho}`)
+        ">Mostrar Quantidade</button>
+
+        <button onclick="
+        if(quantidadeCarrinho + 1 > 10){
+            alert('O carrinho está cheio');
+        }
+        else{
+            quantidadeCarrinho++; //jeito mais curto pra quantidadeCarrinho += 1 ou quantidadeCarrinho = quantidadeCarrinho += 1;
+            console.log(`Quantidade do carrinho: ${quantidadeCarrinho}`)
+        }
+        ">Adicionar ao Carrinho</button>
+
+        <button onclick="
+        if(quantidadeCarrinho + 2 > 10){
+            alert('O carrinho está cheio');
+        }
+        else{
+            quantidadeCarrinho += 2;
+            console.log(`Quantidade do carrinho: ${quantidadeCarrinho}`)
+        }
+        ">+2</button>
+
+        <button onclick="
+        if(quantidadeCarrinho + 3 > 10){
+            alert('O carrinho está cheio');
+        }
+        else{
+            quantidadeCarrinho = quantidadeCarrinho + 3;
+            console.log(`Quantidade do carrinho: ${quantidadeCarrinho}`)
+        }
+        ">+3</button>
+
+        <button onclick="
+        if(quantidadeCarrinho + 4 > 10){
+            alert('O carrinho está cheio');
+        }
+        else{
+            quantidadeCarrinho += 4;
+            console.log(`Quantidade do carrinho: ${quantidadeCarrinho}`)
+        }
+        ">+4</button>
+
+        <button onclick="
+        if(quantidadeCarrinho + 5 > 10){
+            alert('O carrinho está cheio');
+        }
+        else{
+            quantidadeCarrinho += 5;
+            console.log(`Quantidade do carrinho: ${quantidadeCarrinho}`)
+        }
+        ">+5</button>
+
+        <button onclick="
+        if(quantidadeCarrinho - 1 < 0){
+            alert('Itens insuficientes no carrinho');
+        }
+        else{
+            quantidadeCarrinho--;
+            console.log(`Quantidade do carrinho: ${quantidadeCarrinho}`)
+        }
+        ">Remover do Carrinho</button>
+
+        <button onclick="
+        if(quantidadeCarrinho - 2 < 0){
+            alert('Itens insuficientes no carrinho');
+        }
+        else{
+            quantidadeCarrinho -= 2;
+            console.log(`Quantidade do carrinho: ${quantidadeCarrinho}`)
+        }
+        ">-2</button>
+
+        <button onclick="
+        if(quantidadeCarrinho - 3 < 0){
+            alert('Itens insuficientes no carrinho');
+        }
+        else{
+            quantidadeCarrinho -= 3;
+            console.log(`Quantidade do carrinho: ${quantidadeCarrinho}`)
+        }
+        ">-3</button>
+
+        <button onclick="
+        quantidadeCarrinho = 0;
+        console.log('O carrinho foi resetado.');
+        console.log(`Quantidade do carrinho: ${quantidadeCarrinho}`)
+        ">Resetar Carrinho</button>
+
+        <script>
+            let quantidadeCarrinho = 0;
+        </script>
+    </body>
+</html>

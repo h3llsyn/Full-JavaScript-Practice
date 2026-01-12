@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculadora</title>
+    </head>
+
+    <body>
+        <p>
+            <button onclick="
+            calculo += '1';   
+            console.log(calculo);
+            ">1</button>
+
+            <button onclick="
+            calculo += '2';
+            console.log(calculo);
+            ">2</button>
+
+            <button onclick="
+            calculo += '3';
+            console.log(calculo);
+            ">3</button>
+
+            <button onclick="
+            calculo += ' + ';
+            console.log(calculo);
+            ">+</button>
+        </p>
+
+        <p>
+            <button onclick="
+            calculo += '4';   
+            console.log(calculo);
+            ">4</button>
+
+            <button onclick="
+            calculo += '5';
+            console.log(calculo);
+            ">5</button>
+
+            <button onclick="
+            calculo += '6';
+            console.log(calculo);
+            ">6</button>
+
+            <button onclick="
+            calculo += ' - ';
+            console.log(calculo);
+            ">-</button>
+        </p>
+
+        <p>
+            <button onclick="
+            calculo += '7';   
+            console.log(calculo);
+            ">7</button>
+
+            <button onclick="
+            calculo += '8';
+            console.log(calculo);
+            ">8</button>
+
+            <button onclick="
+            calculo += '9';
+            console.log(calculo);
+            ">9</button>
+
+            <button onclick="
+            calculo += ' * ';
+            console.log(calculo);
+            ">*</button>
+        </p>
+
+        <p>
+            <button onclick="
+            calculo += '0';   
+            console.log(calculo);
+            ">0</button>
+
+            <button onclick="
+            calculo += '.';
+            console.log(calculo);
+            ">.</button>
+
+            <button onclick="
+            calculo = eval(calculo) //eval converte string pra uma conta de matemática
+            console.log(calculo);
+            ">=</button>
+
+            <button onclick="
+            calculo += ' / ';
+            console.log(calculo);
+            ">/</button>
+        </p>
+
+        <p>
+            <button onclick="
+            calculo = '';
+            console.log('Apagado.');
+            ">Apagar</button>
+        </p>
+
+        <script>
+            let calculo = '';
+        </script>
+    </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <!-- no head deixamos as informações sobre a página, coisas que não são visíveis -->
+    <head>
+        <title>HTML CSS Review</title>
+        <!-- isso daqui deixa a gente escrever o css dentro do html, sem precisar criar outro arquivo para o css -->
+        <style>
+            /* isso daqui muda a aparencia de TODOS os botoes da página */
+
+            /* button
+            {
+                /* propriedade do css : valor do css * /
+                background-color: red;
+                color: white;
+                border: none;
+            } */
+
+            /* quando começa com . significa que estamos pegando uma class do css*/
+            .red-button {
+                background-color: red;
+                color: white;
+                border: none;
+            }
+
+            .yellow-button {
+                background-color: yellow;
+            }
+        </style>
+    </head>
+    <!-- no body deixamos apenas as coisas que são visíveis na página -->
+    <body>
+        <!-- title e class são atributos html, sendo possivel mudar o comportamento desse elemento (title: quando passar o mouse em cima desse botao vai aparecer o que está escrito dentro do title | class: rotulamos esse botão, sendo possível pegar ele no css para mudarmos apenas esse botão. onclick é um atributo do javascript, quando esse botão for clicado o que estiver dentro dele acontecerá)-->
+        <!-- nome do atributo="valor do atributo" -->
+        <button title="Good job!" class="red-button" onclick="alert('blublu');">
+            hello
+        </button>
+
+        <p>
+            paragrafo de <button class="yellow-button">hello</button> texto
+        </p> <!-- nesting = quando temos um elemento dentro de outro elemento -->
+        <!-- elementos em html ai em cima -->
+
+        <!-- isso daqui deixa a gente escrever o javascript dentro do html, sem precisar criar outro arquivo para o javascript -->
+        <script>
+            // alert('abluuuuuuuuuuuuuuuu');
+
+            /*
+                para comentar
+                multi-line
+            */
+
+            //para mostrar no console
+            console.log(2 + 2);
+            console.log('um' + 'texto');
+        </script>
+    </body>
+</html>
