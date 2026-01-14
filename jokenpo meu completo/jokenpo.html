@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jokenpo lol</title>
+        <link rel="stylesheet" href="jokenpo.css">
+    </head>
+
+    <body>
+        <h1 class="titulo">Pedra, Papel, Tesoura</h1>
+        <p class="paragrafo">Escolha sua jogada:</p>
+        <div class="botoes">
+            <button class="pedra" onclick="
+                pcMovimento();
+                playerMovimento('pedra');
+            ">✊ Pedra</button>
+        
+            <button class="papel" onclick="
+                pcMovimento();
+                playerMovimento('papel');
+            ">✋ Papel</button>
+
+            <button class="tesoura" onclick="
+                pcMovimento();
+                playerMovimento('tesoura');
+            ">✌ Tesoura</button>
+        </div>
+        <div class="scoreDiv">
+            <p id="score" class="score">Você 0 - 0 Computador</p>
+        </div>
+
+        <script src="jokenpo.js"></script>
+    </body>
+</html>
