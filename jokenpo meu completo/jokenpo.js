@@ -17,56 +17,80 @@ function pcMovimento(){
 let pontosPlayer = 0;
 let pontosPc = 0;
 const score = document.getElementById('score');
+const suaJogadaMao = document.getElementById('suaJogadaMao');
+const pcJogadaMao = document.getElementById('pcJogadaMao');
+const suaJogadaEscrita = document.getElementById('suaJogadaEscrita');
+const pcJogadaEscrita = document.getElementById('pcJogadaEscrita');
+const resultado = document.getElementById('resultado');
 
 function playerMovimento(suaJogada){
     const jogadaPc = pcMovimento()
-    let resultado = '';
 
     if(suaJogada === 'pedra'){
-        resultado = '';
+        suaJogadaEscrita.textContent = 'Pedra';
+        suaJogadaMao.textContent = '✊';
 
         if(jogadaPc === 'pedra'){
-            resultado = 'Empate';
+            resultado.textContent = 'Empate';
+            pcJogadaEscrita.textContent = 'Pedra';
+            pcJogadaMao.textContent = '✊';
         }
         else if(jogadaPc === 'papel'){
-            resultado = 'Computador ganhou';
+            resultado.textContent = 'Computador ganhou';
             pontosPc++;
+            pcJogadaEscrita.textContent = 'Papel';
+            pcJogadaMao.textContent = '✋';
         }
         else if(jogadaPc === 'tesoura'){
-            resultado = 'Você ganhou';
+            resultado.textContent = 'Você ganhou';
             pontosPlayer++
+            pcJogadaEscrita.textContent = 'Tesoura';
+            pcJogadaMao.textContent = '✌'
         }
     }
     else if(suaJogada === 'papel'){
-        resultado = '';
+        suaJogadaEscrita.textContent = 'Papel';
+        suaJogadaMao.textContent = '✋'
 
         if(jogadaPc === 'pedra'){
-            resultado = 'Você ganhou';
+            resultado.textContent = 'Você ganhou';
             pontosPlayer++;
+            pcJogadaEscrita.textContent = 'Pedra';
+            pcJogadaMao.textContent = '✊';
         }
         else if(jogadaPc === 'papel'){
-            resultado = 'Empate';
+            resultado.textContent = 'Empate';
+            pcJogadaEscrita.textContent = 'Papel';
+            pcJogadaMao.textContent = '✋'
         }
         else if(jogadaPc === 'tesoura'){
-            resultado = 'Computador ganhou';
+            resultado.textContent = 'Computador ganhou';
             pontosPc++;
+            pcJogadaEscrita.textContent = 'Tesoura';
+            pcJogadaMao.textContent = '✌'
         }
     }
     else if(suaJogada === 'tesoura'){
-        resultado = '';
+        suaJogadaEscrita.textContent = 'Tesoura';
+        suaJogadaMao.textContent = '✌'
 
         if(jogadaPc === 'pedra'){
-            resultado = 'Computador ganhou';
+            resultado.textContent = 'Computador ganhou';
             pontosPc++;
+            pcJogadaEscrita.textContent = 'Pedra';
+            pcJogadaMao.textContent = '✊';
         }
         else if(jogadaPc === 'papel'){
-            resultado = 'Você ganhou';
+            resultado.textContent = 'Você ganhou';
             pontosPlayer++;
+            pcJogadaEscrita.textContent = 'Papel';
+            pcJogadaMao.textContent = '✋'
         }
         else if(jogadaPc === 'tesoura'){
-            resultado = 'Empate';
+            resultado.textContent = 'Empate';
+            pcJogadaEscrita.textContent = 'Tesoura';
+            pcJogadaMao.textContent = '✌'
         }
     }
-    alert(`Computador jogou ${jogadaPc}, você jogou ${suaJogada}. ${resultado}.`);
     score.textContent = `Você ${pontosPlayer} - ${pontosPc} Computador`
 }

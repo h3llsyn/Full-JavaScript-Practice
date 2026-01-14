@@ -24,9 +24,27 @@
                 playerMovimento('tesoura');
             ">✌ Tesoura</button>
         </div>
+        <div class="jogadaDiv">
+            <div>
+                <p>Você jogou</p>
+                <div class="suaJogadaDiv">
+                    <p class="suaJogadaMao" id="suaJogadaMao">❌</p>
+                    <p class="suaJogadaEscrita" id="suaJogadaEscrita">---</p>
+                </div>
+            </div>
+            <p class="vs">VS</p>
+            <div>
+                <p>Computador jogou</p>
+                <div class="pcJogadaDiv">
+                    <p class="pcJogadaMao" id="pcJogadaMao">❌</p>
+                    <p class="pcJogadaEscrita" id="pcJogadaEscrita">---</p>
+                </div>
+            </div>
+        </div>
         <div class="scoreDiv">
             <p id="score" class="score">Você 0 - 0 Computador</p>
         </div>
+        <p id="resultado" class="resultado"></p>
 
         <script src="jokenpo.js"></script>
     </body>
