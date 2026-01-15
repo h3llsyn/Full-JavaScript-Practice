@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora uau</title>
+    <link rel="stylesheet" href="calculadora.css">
+</head>
+<body>
+    <div id="titulo">
+        <h1>Calculadora muito incrível uau</h1>
+    </div>
+    <div id="calculadora">
+        <input id="display" readonly>
+        <div id="botoes">
+            <button onclick="aparecerNoDisplay('7')">7</button>
+            <button onclick="aparecerNoDisplay('8')">8</button>
+            <button onclick="aparecerNoDisplay('9')">9</button>
+            <button onclick="aparecerNoDisplay('*')">*</button>
+            <button onclick="aparecerNoDisplay('4')">4</button>
+            <button onclick="aparecerNoDisplay('5')">5</button>
+            <button onclick="aparecerNoDisplay('6')">6</button>
+            <button onclick="aparecerNoDisplay('/')">/</button>
+            <button onclick="aparecerNoDisplay('1')">1</button>
+            <button onclick="aparecerNoDisplay('2')">2</button>
+            <button onclick="aparecerNoDisplay('3')">3</button>
+            <button onclick="aparecerNoDisplay('-')">-</button>
+            <button onclick="aparecerNoDisplay('0')">0</button>
+            <button onclick="aparecerNoDisplay('.')">.</button>
+            <button onclick="calcular()">=</button>
+            <button onclick="aparecerNoDisplay('+')">+</button>
+            <button onclick="limparDisplay()">C</button>
+        </div>
+    </div>
+    <script src="calculadora.js"></script>
+</body>
+</html>
