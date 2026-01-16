@@ -1,0 +1,73 @@
+body{
+    background-color: rgb(221, 192, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+#container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#titulo{
+    background-color: rgb(179, 112, 255);
+    color: rgb(247, 239, 255);
+    font-size: 10px;
+    width: 50vh;
+    text-align: center;
+    border-radius: 10px;
+}
+#toDoLista{
+    height: 35%;
+    width: 50vh;
+    background-color: rgb(247, 239, 255);
+    color: rgb(37, 37, 37);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+#criarTarefaContainer{
+    width: 50vh;
+    height: 45px;
+    position: absolute;
+    bottom: 15%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(179, 112, 255);
+    border-radius: 20px;
+}
+button{
+    background-color: rgb(123, 79, 173);
+    color: rgb(247, 239, 255);
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 0 0 5px rgba(18, 0, 36, 0.486);
+}
+button:hover{
+    background-color: rgb(100, 65, 141);
+}
+button:active{
+    background-color: rgb(76, 49, 107);
+}
+#inputTarefa{
+    border: none;
+    background-color: rgb(179, 112, 255);
+    color: rgb(247, 239, 255);
+    width: 35vh;
+    height: 20px;
+    font-size: 15px;
+}
+#inputTarefa::placeholder{
+    color: rgb(247, 239, 255);
+}
+#lista{
+    margin-top: 30px;
+}
+input[type="checkbox"]{
+    margin-right: 10px;
+}
