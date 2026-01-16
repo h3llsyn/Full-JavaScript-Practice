@@ -24,6 +24,7 @@ body{
     color: rgb(37, 37, 37);
     border-radius: 10px;
     margin-top: 20px;
+    overflow: scroll;
 }
 #criarTarefaContainer{
     width: 50vh;
@@ -69,8 +70,12 @@ button:active{
     outline: none;
 }
 #lista{
-    margin-top: 30px;
+    position: absolute;
+    left: 150px;
 }
 input[type="checkbox"]{
     margin-right: 10px;
+}
+ul{
+    list-style-type: none;
 }
